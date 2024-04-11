@@ -1,0 +1,139 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: hsl(217, 54%, 11%);
+    width: 100%;
+    height: 100vh;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: cursive;
+}
+
+.card{
+    background-color: hsl(216, 50%, 16%);
+    border-radius: 10px;
+    width: 375px;
+    padding: 1.1rem;
+}
+
+.image{
+    position:relative;
+
+}
+
+.image div{
+    position: absolute;
+    background-color: hsl(178, 100%, 50%, 60%);
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+}
+
+.image div img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.image div:hover{
+    position: absolute;
+    background-color: hsl(178, 100%, 50%);
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: .75;
+}
+
+.equiimage{
+    /* position: relative; */
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    /* box-shadow: 10px 10px 5px ; */
+}
+
+
+.eye{
+    position: relative;
+    background-color: aqua;
+    top: 0;
+}
+
+h3{
+   margin-top: 1.5rem;
+   font-size: 20px;
+}
+
+.description{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    color: hsl(215, 51%, 70%);
+    font-size: 1.3rem;
+}
+
+.price-days{
+    display: flex;
+    justify-content: space-between;
+    border-bottom:1px solid hsl(215, 51%, 70%);
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+}
+
+.price{
+    color: hsl(178, 100%, 50%);
+    display: flex;
+    align-items: center;
+    letter-spacing: 1px;
+}
+.days{
+    display: flex;
+    align-items: center;
+    color: hsl(215, 51%, 70%);
+}
+
+.days img{
+    margin-right: 2px;
+}
+
+.price img{
+    margin-right: 5px;
+}
+
+.creator{
+    display: flex;
+    align-items: center;
+    color: hsl(215, 51%, 70%);
+}
+
+.profile-pic{
+    border: 3px solid white;
+    border-radius: 100%;
+    width: 35px;
+    margin-right: 5px;
+}
+
+span{
+    color: white;
+    padding-left: 5px;
+}
+
+h3:hover,
+span:hover{
+    color: aqua;
+}
+
+
+
+.image,
+h3,
+span{
+    cursor: pointer;
+}
+
